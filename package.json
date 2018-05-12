@@ -1,6 +1,6 @@
 {
-  "name": "chrome-vue-webpack",
-  "description": "A Vue.js project",
+  "name": "chrome-plugin-vue-webpack",
+  "description": "A Chrome plugin using vue + webpack template",
   "version": "1.0.0",
   "author": "tksumanth1994 <tksumanth1994@gmail.com>",
   "license": "MIT",
