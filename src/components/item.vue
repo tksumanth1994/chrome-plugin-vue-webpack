@@ -2,7 +2,7 @@
   <main>
     <header>
       <a :href="item.url" target="_blank" class="logo">
-        <img class="p-t-sm" src="../assets/hn-logo.png" width="30">
+        <img class="p-t-sm" src="hn-logo.png" width="30">
       </a>
     </header>
     <div class="container p-x-0">

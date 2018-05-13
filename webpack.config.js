@@ -1,5 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
+var ChromeReloadPlugin  = require('wcer')
+var CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -103,6 +105,13 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
-    })
+    }),
+    new ChromeReloadPlugin({
+      port: 9090,
+      manifest: path.join(__dirname, './', 'src', 'manifest.js')
+    }),
+    new CopyWebpackPlugin([
+      { from: './index.html', to: './index.html' }
+    ])
   ])
 }
